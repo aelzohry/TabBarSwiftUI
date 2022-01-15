@@ -50,6 +50,7 @@ struct ContentView: View {
         .offset(x: ( ( 2 * self.badgePosition) - 1 ) * ( geometry.size.width / ( 2 * self.tabsCount ) ), y: -30)
         .opacity(self.badgeNumber == 0 ? 0 : 1)
       }
+      .ignoresSafeArea(.keyboard)
     }
   }
 }
